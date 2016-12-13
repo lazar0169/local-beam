@@ -1,4 +1,4 @@
-// test vrednosti
+// test
 function generate() {
     let value1 = document.getElementById('length').value;
     let value2 = document.getElementById('max').value;
@@ -17,7 +17,7 @@ function generate() {
     document.getElementById('test').innerHTML = 'All positions: ' + JSON.stringify(targetValues);
 }
 
-// beamSearch funkcija
+// beamSearch function
 function beamSearch(array, k, target, limit) {
     var initialStates = [],
         arrayValues = [],
@@ -65,7 +65,7 @@ function beamSearch(array, k, target, limit) {
     return "Not found";
 }
 
-// Funckija za generisanje nasumicnog niza
+// Function for generating random array
 function generateRandomArray(length, max) {
     return Array.from({ length: length }, () => Math.floor(Math.random() * max));
 }
