@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Local Beam Search</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th style="font-weight: normal;text-align: start;">Array length</th>
+            <th><input value="1000" id="length" placeholder="Array length"></th>
+        </tr>
+        <tr>
+            <td>Maximum number in array</td>
+            <td><input value="2000" id="max" placeholder="Maximum number in array"></td>
+        </tr>
+        <tr>
+            <td>Number of random generated states</td>
+            <td><input value="20" id="k" placeholder="Number of random generated states"></td>
+        </tr>
+        <tr>
+            <td>Target number</td>
+            <td><input value="1950" id="target" placeholder="Target number"></td>
+        </tr>
+        <tr>
+            <td>Iteration limit</td>
+            <td><input value="40" id="limit" placeholder="Iteration limit"></td>
+        </tr>
+    </table>
+    <button onclick="generate()">Refresh</button>
+    <br><br>
+    <div id="iteration"></div>
+    <div id="result"></div>
+    <br>
+    <div id="test" style="max-width: 410px;max-height:150px;overflow:auto;word-break: break-all;"></div>
+    <script src="local-beam.js"></script>
+</body>
+
+</html>
